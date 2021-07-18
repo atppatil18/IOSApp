@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BC3802F26A3EB4600E7DBC3 /* Poonam_SofasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3801C26A3EB4300E7DBC3 /* Poonam_SofasApp.swift */; };
+		3BC3803026A3EB4600E7DBC3 /* Poonam_SofasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3801C26A3EB4300E7DBC3 /* Poonam_SofasApp.swift */; };
+		3BC3803126A3EB4600E7DBC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3801D26A3EB4300E7DBC3 /* ContentView.swift */; };
+		3BC3803226A3EB4600E7DBC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3801D26A3EB4300E7DBC3 /* ContentView.swift */; };
+		3BC3803326A3EB4600E7DBC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC3801E26A3EB4600E7DBC3 /* Assets.xcassets */; };
+		3BC3803426A3EB4600E7DBC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC3801E26A3EB4600E7DBC3 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3BC3801C26A3EB4300E7DBC3 /* Poonam_SofasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poonam_SofasApp.swift; sourceTree = "<group>"; };
+		3BC3801D26A3EB4300E7DBC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3BC3801E26A3EB4600E7DBC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BC3802326A3EB4600E7DBC3 /* Poonam Sofas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poonam Sofas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC3802626A3EB4600E7DBC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BC3802B26A3EB4600E7DBC3 /* Poonam Sofas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poonam Sofas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC3802D26A3EB4600E7DBC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BC3802E26A3EB4600E7DBC3 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BC3802026A3EB4600E7DBC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC3802826A3EB4600E7DBC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BC3801626A3EB4300E7DBC3 = {
+			isa = PBXGroup;
+			children = (
+				3BC3801B26A3EB4300E7DBC3 /* Shared */,
+				3BC3802526A3EB4600E7DBC3 /* iOS */,
+				3BC3802C26A3EB4600E7DBC3 /* macOS */,
+				3BC3802426A3EB4600E7DBC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BC3801B26A3EB4300E7DBC3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3BC3801C26A3EB4300E7DBC3 /* Poonam_SofasApp.swift */,
+				3BC3801D26A3EB4300E7DBC3 /* ContentView.swift */,
+				3BC3801E26A3EB4600E7DBC3 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		3BC3802426A3EB4600E7DBC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BC3802326A3EB4600E7DBC3 /* Poonam Sofas.app */,
+				3BC3802B26A3EB4600E7DBC3 /* Poonam Sofas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BC3802526A3EB4600E7DBC3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3BC3802626A3EB4600E7DBC3 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		3BC3802C26A3EB4600E7DBC3 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				3BC3802D26A3EB4600E7DBC3 /* Info.plist */,
+				3BC3802E26A3EB4600E7DBC3 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BC3802226A3EB4600E7DBC3 /* Poonam Sofas (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC3803726A3EB4600E7DBC3 /* Build configuration list for PBXNativeTarget "Poonam Sofas (iOS)" */;
+			buildPhases = (
+				3BC3801F26A3EB4600E7DBC3 /* Sources */,
+				3BC3802026A3EB4600E7DBC3 /* Frameworks */,
+				3BC3802126A3EB4600E7DBC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Poonam Sofas (iOS)";
+			productName = "Poonam Sofas (iOS)";
+			productReference = 3BC3802326A3EB4600E7DBC3 /* Poonam Sofas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BC3802A26A3EB4600E7DBC3 /* Poonam Sofas (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC3803A26A3EB4600E7DBC3 /* Build configuration list for PBXNativeTarget "Poonam Sofas (macOS)" */;
+			buildPhases = (
+				3BC3802726A3EB4600E7DBC3 /* Sources */,
+				3BC3802826A3EB4600E7DBC3 /* Frameworks */,
+				3BC3802926A3EB4600E7DBC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Poonam Sofas (macOS)";
+			productName = "Poonam Sofas (macOS)";
+			productReference = 3BC3802B26A3EB4600E7DBC3 /* Poonam Sofas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BC3801726A3EB4300E7DBC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					3BC3802226A3EB4600E7DBC3 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					3BC3802A26A3EB4600E7DBC3 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 3BC3801A26A3EB4300E7DBC3 /* Build configuration list for PBXProject "Poonam Sofas" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BC3801626A3EB4300E7DBC3;
+			productRefGroup = 3BC3802426A3EB4600E7DBC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BC3802226A3EB4600E7DBC3 /* Poonam Sofas (iOS) */,
+				3BC3802A26A3EB4600E7DBC3 /* Poonam Sofas (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BC3802126A3EB4600E7DBC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC3803326A3EB4600E7DBC3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC3802926A3EB4600E7DBC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC3803426A3EB4600E7DBC3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BC3801F26A3EB4600E7DBC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC3803126A3EB4600E7DBC3 /* ContentView.swift in Sources */,
+				3BC3802F26A3EB4600E7DBC3 /* Poonam_SofasApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC3802726A3EB4600E7DBC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC3803226A3EB4600E7DBC3 /* ContentView.swift in Sources */,
+				3BC3803026A3EB4600E7DBC3 /* Poonam_SofasApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3BC3803526A3EB4600E7DBC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BC3803626A3EB4600E7DBC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3BC3803826A3EB4600E7DBC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YDYP5P63VY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.minted.Poonam-Sofas";
+				PRODUCT_NAME = "Poonam Sofas";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BC3803926A3EB4600E7DBC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YDYP5P63VY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.minted.Poonam-Sofas";
+				PRODUCT_NAME = "Poonam Sofas";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BC3803B26A3EB4600E7DBC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YDYP5P63VY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.minted.Poonam-Sofas";
+				PRODUCT_NAME = "Poonam Sofas";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3BC3803C26A3EB4600E7DBC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YDYP5P63VY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.minted.Poonam-Sofas";
+				PRODUCT_NAME = "Poonam Sofas";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BC3801A26A3EB4300E7DBC3 /* Build configuration list for PBXProject "Poonam Sofas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC3803526A3EB4600E7DBC3 /* Debug */,
+				3BC3803626A3EB4600E7DBC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC3803726A3EB4600E7DBC3 /* Build configuration list for PBXNativeTarget "Poonam Sofas (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC3803826A3EB4600E7DBC3 /* Debug */,
+				3BC3803926A3EB4600E7DBC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC3803A26A3EB4600E7DBC3 /* Build configuration list for PBXNativeTarget "Poonam Sofas (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC3803B26A3EB4600E7DBC3 /* Debug */,
+				3BC3803C26A3EB4600E7DBC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BC3801726A3EB4300E7DBC3 /* Project object */;
+}
