@@ -3,19 +3,55 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B1AFB4626BD853900E6E2E4 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 3B1AFB4526BD853900E6E2E4 /* Realm */; };
+		3B1AFB4826BD853900E6E2E4 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3B1AFB4726BD853900E6E2E4 /* RealmSwift */; };
+		3B1AFB4A26BE4DBC00E6E2E4 /* NeumorphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1AFB4926BE4DBC00E6E2E4 /* NeumorphicView.swift */; };
+		3B1AFB4B26BE4DBC00E6E2E4 /* NeumorphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1AFB4926BE4DBC00E6E2E4 /* NeumorphicView.swift */; };
+		3B4745BA26A744730068431B /* UpdateItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4745B926A744730068431B /* UpdateItemView.swift */; };
+		3B4745BB26A744730068431B /* UpdateItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4745B926A744730068431B /* UpdateItemView.swift */; };
+		3B812D7F26AB3E5000B51454 /* StorageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B812D7E26AB3E5000B51454 /* StorageItem.swift */; };
+		3B812D8026AB3E5000B51454 /* StorageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B812D7E26AB3E5000B51454 /* StorageItem.swift */; };
+		3B812D8326AB3F3B00B51454 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 3B812D8226AB3F3B00B51454 /* Realm */; };
+		3B812D8526AB3F3B00B51454 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3B812D8426AB3F3B00B51454 /* RealmSwift */; };
+		3B812D8726AB41C300B51454 /* RealmHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B812D8626AB41C300B51454 /* RealmHandler.swift */; };
+		3B812D8826AB41C300B51454 /* RealmHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B812D8626AB41C300B51454 /* RealmHandler.swift */; };
 		3BC3802F26A3EB4600E7DBC3 /* Poonam_SofasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3801C26A3EB4300E7DBC3 /* Poonam_SofasApp.swift */; };
 		3BC3803026A3EB4600E7DBC3 /* Poonam_SofasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3801C26A3EB4300E7DBC3 /* Poonam_SofasApp.swift */; };
 		3BC3803126A3EB4600E7DBC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3801D26A3EB4300E7DBC3 /* ContentView.swift */; };
 		3BC3803226A3EB4600E7DBC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3801D26A3EB4300E7DBC3 /* ContentView.swift */; };
 		3BC3803326A3EB4600E7DBC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC3801E26A3EB4600E7DBC3 /* Assets.xcassets */; };
 		3BC3803426A3EB4600E7DBC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC3801E26A3EB4600E7DBC3 /* Assets.xcassets */; };
+		3BC3803E26A3EF7D00E7DBC3 /* StartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3803D26A3EF7D00E7DBC3 /* StartApp.swift */; };
+		3BC3803F26A3EF7D00E7DBC3 /* StartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3803D26A3EF7D00E7DBC3 /* StartApp.swift */; };
+		3BC3804126A4075900E7DBC3 /* SelectItemUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3804026A4075900E7DBC3 /* SelectItemUI.swift */; };
+		3BC3804226A4075900E7DBC3 /* SelectItemUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3804026A4075900E7DBC3 /* SelectItemUI.swift */; };
+		3BC3804426A4614700E7DBC3 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3804326A4614700E7DBC3 /* SearchBar.swift */; };
+		3BC3804526A4614700E7DBC3 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3804326A4614700E7DBC3 /* SearchBar.swift */; };
+		3BC3804726A462C500E7DBC3 /* Holders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3804626A462C500E7DBC3 /* Holders.swift */; };
+		3BC3804826A462C500E7DBC3 /* Holders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3804626A462C500E7DBC3 /* Holders.swift */; };
+		3BC3804A26A4641100E7DBC3 /* ModelViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3804926A4641100E7DBC3 /* ModelViewHandler.swift */; };
+		3BC3804B26A4641100E7DBC3 /* ModelViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3804926A4641100E7DBC3 /* ModelViewHandler.swift */; };
+		3BC3804D26A4642900E7DBC3 /* DBHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3804C26A4642900E7DBC3 /* DBHandler.swift */; };
+		3BC3804E26A4642900E7DBC3 /* DBHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3804C26A4642900E7DBC3 /* DBHandler.swift */; };
+		3BD771F326A5DAC80009A075 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD771F226A5DAC80009A075 /* AuthView.swift */; };
+		3BD771F426A5DAC80009A075 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD771F226A5DAC80009A075 /* AuthView.swift */; };
+		3BD771F626A5F90D0009A075 /* CalculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD771F526A5F90D0009A075 /* CalculateView.swift */; };
+		3BD771F726A5F90D0009A075 /* CalculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD771F526A5F90D0009A075 /* CalculateView.swift */; };
+		3BD771F926A5FD070009A075 /* EditListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD771F826A5FD070009A075 /* EditListView.swift */; };
+		3BD771FA26A5FD070009A075 /* EditListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD771F826A5FD070009A075 /* EditListView.swift */; };
+		3BD771FC26A5FD380009A075 /* EachItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD771FB26A5FD380009A075 /* EachItemView.swift */; };
+		3BD771FD26A5FD380009A075 /* EachItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD771FB26A5FD380009A075 /* EachItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B1AFB4926BE4DBC00E6E2E4 /* NeumorphicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicView.swift; sourceTree = "<group>"; };
+		3B4745B926A744730068431B /* UpdateItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateItemView.swift; sourceTree = "<group>"; };
+		3B812D7E26AB3E5000B51454 /* StorageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageItem.swift; sourceTree = "<group>"; };
+		3B812D8626AB41C300B51454 /* RealmHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHandler.swift; sourceTree = "<group>"; };
 		3BC3801C26A3EB4300E7DBC3 /* Poonam_SofasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poonam_SofasApp.swift; sourceTree = "<group>"; };
 		3BC3801D26A3EB4300E7DBC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3BC3801E26A3EB4600E7DBC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -24,6 +60,16 @@
 		3BC3802B26A3EB4600E7DBC3 /* Poonam Sofas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poonam Sofas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC3802D26A3EB4600E7DBC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BC3802E26A3EB4600E7DBC3 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		3BC3803D26A3EF7D00E7DBC3 /* StartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartApp.swift; sourceTree = "<group>"; };
+		3BC3804026A4075900E7DBC3 /* SelectItemUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectItemUI.swift; sourceTree = "<group>"; };
+		3BC3804326A4614700E7DBC3 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		3BC3804626A462C500E7DBC3 /* Holders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holders.swift; sourceTree = "<group>"; };
+		3BC3804926A4641100E7DBC3 /* ModelViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewHandler.swift; sourceTree = "<group>"; };
+		3BC3804C26A4642900E7DBC3 /* DBHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHandler.swift; sourceTree = "<group>"; };
+		3BD771F226A5DAC80009A075 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		3BD771F526A5F90D0009A075 /* CalculateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateView.swift; sourceTree = "<group>"; };
+		3BD771F826A5FD070009A075 /* EditListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditListView.swift; sourceTree = "<group>"; };
+		3BD771FB26A5FD380009A075 /* EachItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B812D8526AB3F3B00B51454 /* RealmSwift in Frameworks */,
+				3B812D8326AB3F3B00B51454 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,12 +86,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1AFB4826BD853900E6E2E4 /* RealmSwift in Frameworks */,
+				3B1AFB4626BD853900E6E2E4 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B1AFB4426BD853900E6E2E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3BC3801626A3EB4300E7DBC3 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +108,7 @@
 				3BC3802526A3EB4600E7DBC3 /* iOS */,
 				3BC3802C26A3EB4600E7DBC3 /* macOS */,
 				3BC3802426A3EB4600E7DBC3 /* Products */,
+				3B1AFB4426BD853900E6E2E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +118,20 @@
 				3BC3801C26A3EB4300E7DBC3 /* Poonam_SofasApp.swift */,
 				3BC3801D26A3EB4300E7DBC3 /* ContentView.swift */,
 				3BC3801E26A3EB4600E7DBC3 /* Assets.xcassets */,
+				3BC3803D26A3EF7D00E7DBC3 /* StartApp.swift */,
+				3BC3804026A4075900E7DBC3 /* SelectItemUI.swift */,
+				3BC3804326A4614700E7DBC3 /* SearchBar.swift */,
+				3BC3804626A462C500E7DBC3 /* Holders.swift */,
+				3BD771F226A5DAC80009A075 /* AuthView.swift */,
+				3BD771F526A5F90D0009A075 /* CalculateView.swift */,
+				3BD771F826A5FD070009A075 /* EditListView.swift */,
+				3BD771FB26A5FD380009A075 /* EachItemView.swift */,
+				3B4745B926A744730068431B /* UpdateItemView.swift */,
+				3BC3804926A4641100E7DBC3 /* ModelViewHandler.swift */,
+				3BC3804C26A4642900E7DBC3 /* DBHandler.swift */,
+				3B812D7E26AB3E5000B51454 /* StorageItem.swift */,
+				3B812D8626AB41C300B51454 /* RealmHandler.swift */,
+				3B1AFB4926BE4DBC00E6E2E4 /* NeumorphicView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -106,6 +178,10 @@
 			dependencies = (
 			);
 			name = "Poonam Sofas (iOS)";
+			packageProductDependencies = (
+				3B812D8226AB3F3B00B51454 /* Realm */,
+				3B812D8426AB3F3B00B51454 /* RealmSwift */,
+			);
 			productName = "Poonam Sofas (iOS)";
 			productReference = 3BC3802326A3EB4600E7DBC3 /* Poonam Sofas.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +199,10 @@
 			dependencies = (
 			);
 			name = "Poonam Sofas (macOS)";
+			packageProductDependencies = (
+				3B1AFB4526BD853900E6E2E4 /* Realm */,
+				3B1AFB4726BD853900E6E2E4 /* RealmSwift */,
+			);
 			productName = "Poonam Sofas (macOS)";
 			productReference = 3BC3802B26A3EB4600E7DBC3 /* Poonam Sofas.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +233,9 @@
 				Base,
 			);
 			mainGroup = 3BC3801626A3EB4300E7DBC3;
+			packageReferences = (
+				3B812D8126AB3F3B00B51454 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = 3BC3802426A3EB4600E7DBC3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -188,7 +271,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BC3803126A3EB4600E7DBC3 /* ContentView.swift in Sources */,
+				3BD771F626A5F90D0009A075 /* CalculateView.swift in Sources */,
+				3BC3804726A462C500E7DBC3 /* Holders.swift in Sources */,
+				3B4745BA26A744730068431B /* UpdateItemView.swift in Sources */,
+				3B1AFB4A26BE4DBC00E6E2E4 /* NeumorphicView.swift in Sources */,
 				3BC3802F26A3EB4600E7DBC3 /* Poonam_SofasApp.swift in Sources */,
+				3BC3804426A4614700E7DBC3 /* SearchBar.swift in Sources */,
+				3B812D8726AB41C300B51454 /* RealmHandler.swift in Sources */,
+				3BD771F926A5FD070009A075 /* EditListView.swift in Sources */,
+				3BC3804126A4075900E7DBC3 /* SelectItemUI.swift in Sources */,
+				3BC3804A26A4641100E7DBC3 /* ModelViewHandler.swift in Sources */,
+				3BD771FC26A5FD380009A075 /* EachItemView.swift in Sources */,
+				3B812D7F26AB3E5000B51454 /* StorageItem.swift in Sources */,
+				3BC3804D26A4642900E7DBC3 /* DBHandler.swift in Sources */,
+				3BC3803E26A3EF7D00E7DBC3 /* StartApp.swift in Sources */,
+				3BD771F326A5DAC80009A075 /* AuthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +294,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BC3803226A3EB4600E7DBC3 /* ContentView.swift in Sources */,
+				3BD771F726A5F90D0009A075 /* CalculateView.swift in Sources */,
+				3BC3804826A462C500E7DBC3 /* Holders.swift in Sources */,
+				3B4745BB26A744730068431B /* UpdateItemView.swift in Sources */,
+				3B1AFB4B26BE4DBC00E6E2E4 /* NeumorphicView.swift in Sources */,
 				3BC3803026A3EB4600E7DBC3 /* Poonam_SofasApp.swift in Sources */,
+				3BC3804526A4614700E7DBC3 /* SearchBar.swift in Sources */,
+				3B812D8826AB41C300B51454 /* RealmHandler.swift in Sources */,
+				3BD771FA26A5FD070009A075 /* EditListView.swift in Sources */,
+				3BC3804226A4075900E7DBC3 /* SelectItemUI.swift in Sources */,
+				3BC3804B26A4641100E7DBC3 /* ModelViewHandler.swift in Sources */,
+				3BD771FD26A5FD380009A075 /* EachItemView.swift in Sources */,
+				3B812D8026AB3E5000B51454 /* StorageItem.swift in Sources */,
+				3BC3804E26A4642900E7DBC3 /* DBHandler.swift in Sources */,
+				3BC3803F26A3EF7D00E7DBC3 /* StartApp.swift in Sources */,
+				3BD771F426A5DAC80009A075 /* AuthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +550,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B812D8126AB3F3B00B51454 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B1AFB4526BD853900E6E2E4 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B812D8126AB3F3B00B51454 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		3B1AFB4726BD853900E6E2E4 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B812D8126AB3F3B00B51454 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		3B812D8226AB3F3B00B51454 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B812D8126AB3F3B00B51454 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		3B812D8426AB3F3B00B51454 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B812D8126AB3F3B00B51454 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3BC3801726A3EB4300E7DBC3 /* Project object */;
 }
