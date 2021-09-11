@@ -161,7 +161,7 @@ struct SelectView: View {
         var tempArr = [Item]()
         for eachItem in itemRows{
             
-            let temp =  Item(id: eachItem.id, name: eachItem.name, cover: eachItem.cover, price: eachItem.price, category: eachItem.category, unit: eachItem.unit, selected: eachItem.selected, count: 1)
+            let temp =  Item(id: eachItem.id, name: eachItem.name, cover: "1", price: eachItem.price, category: eachItem.category, unit: eachItem.unit, selected: eachItem.selected, count: 1)
             
             tempArr.append(temp)
         }
@@ -203,7 +203,12 @@ struct ConfirmView: View {
     @Binding var SelectedArray: [Item]
     @Binding var authMenu: Bool
     @State var searchTextData = ""
+        
+    //@State var copySelectArray: [Item] //= self.setCountArray(count: SelectedArray.count)
     
+   
+    
+ 
     var body: some View{
         ZStack{
             //e9ecef
@@ -211,7 +216,8 @@ struct ConfirmView: View {
             VStack{
                 
                 SearchBar(text: $searchTextData)
-                    
+                                
+               
                 
                 List(SelectedArray.indices , id: \.self){index in
                     
@@ -222,6 +228,19 @@ struct ConfirmView: View {
                             .foregroundColor(.white)
                         
                         Spacer()
+                        TextField("", text: self.$SelectedArray[index].cover)
+                            .font(.headline)
+                            .padding()
+                            .frame(width: 80, height: 30, alignment: .trailing)
+                            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                                .background(Color.white)
+                            .foregroundColor(.gray)
+                                .mask(RoundedRectangle(cornerRadius: 10))
+                                //.opacity(0.9)
+                                .shadow(color: Color(hex: "292929"), radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: 1, y: 1)
+                        
+                        /* For counter
+                        
                         Text(String(SelectedArray[index].count ?? 0))
                             .frame(width: 40, height: 40, alignment: .center)
                             .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
@@ -259,8 +278,8 @@ struct ConfirmView: View {
                                 //.background(Color.white)
                                 .foregroundColor(.gray)
                         }).buttonStyle(TransparentButton())
-                        
-                        
+                         For counter
+                        */
                         
                     }
                     .padding()
@@ -272,8 +291,7 @@ struct ConfirmView: View {
                 //.background(Color(hex: "e9ecef"))
                 
                 HStack{
-                    
-                        
+
                     Button(action: {
                         self.confirmMenu = false
                         self.selectMenu = true
@@ -295,5 +313,13 @@ struct ConfirmView: View {
             }//VStack
         }//ZStack
         //Text("Confirm Data")
+    }
+    
+    func setCountArray(count: Int) -> [String] {
+        var temp: [String] = []
+        for num in 1...SelectedArray.count{
+            temp.append("1")
+        }
+        return temp
     }
 }

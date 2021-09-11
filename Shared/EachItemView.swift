@@ -48,10 +48,6 @@ struct EachItemView: View {
             }
             .padding()
             
-            
-            
-            
-            
             HStack{
                 Text("Price: ")
                     .padding()
@@ -77,14 +73,15 @@ struct EachItemView: View {
                 if self.selectedCategory == "None"{
                     Text("Unit: ")
                         .padding()
-                        .frame(width: 150)
-                        .font(Font.system(size: 15))
+                        .frame(width: 75)
+                        .font(Font.system(size: 13))
                         .background(Color(hex: "F5F5F5"))
                         .cornerRadius(16)
                         .shadow(color: .gray, radius: 2, x: 2, y: 3)
                     Picker("", selection: $selectedUnit) {
                         ForEach(self.allUnit, id: \.self) {
                             Text($0)
+                                .font(Font.system(size: 13))
                         }
                     }
                     .pickerStyle(DefaultPickerStyle())
@@ -100,14 +97,15 @@ struct EachItemView: View {
                 Section {
                     Text("Category: ")
                         .padding()
-                        .frame(width: 150)
-                        .font(Font.system(size: 15))
+                        .frame(width: 100)
+                        .font(Font.system(size: 13))
                         .background(Color(hex: "F5F5F5"))
                         .cornerRadius(16)
                         .shadow(color: .gray, radius: 2, x: 2, y: 3)
                     Picker("", selection: $selectedCategory) {
                         ForEach(allCategory, id: \.self) {
                             Text($0)
+                                .font(Font.system(size: 13))
                         }
                     }
                     //.pickerStyle(WheelPickerStyle())
@@ -236,7 +234,7 @@ struct EachItemView: View {
                 }).buttonStyle(BlueButton())
             }
             
-        }.padding()
+        }//.padding()
         
         
     }
@@ -381,6 +379,7 @@ struct EachCategoryView: View {
                     .cornerRadius(16)
                     .shadow(color: .gray, radius: 2, x: 2, y: 3)
                 TextField("", text: $name)
+                    
                     .padding()
                     .font(Font.system(size: 15))
                     .background(Color(hex: "F5F5F5"))
@@ -389,8 +388,8 @@ struct EachCategoryView: View {
                     .alert(isPresented: $showAlert, content: {
                         Alert(title: Text("Duplicate entry"))
                     })
-            }
-            .padding()
+            }.padding()
+            
             HStack{
                 Text("Price: ")
                     .padding()
@@ -410,17 +409,19 @@ struct EachCategoryView: View {
                     })
             }
             .padding()
+            
             HStack{
                 Text("Unit: ")
                     .padding()
-                    .frame(width: 150)
-                    .font(Font.system(size: 15))
+                    .frame(width: 75)
+                    .font(Font.system(size: 13))
                     .background(Color(hex: "F5F5F5"))
                     .cornerRadius(16)
                     .shadow(color: .gray, radius: 2, x: 2, y: 3)
                 Picker("", selection: $selectedUnit) {
                     ForEach(self.allUnit, id: \.self) {
                         Text($0)
+                            .font(Font.system(size: 13))
                     }
                 }
                 .pickerStyle(DefaultPickerStyle())
@@ -428,21 +429,21 @@ struct EachCategoryView: View {
                 .background(Color(hex: "F5F5F5"))
                 .cornerRadius(16)
                 .shadow(color: .gray, radius: 2, x: 2, y: 3)
-            
-                Text("Dimention: ")
-                    .padding()
-                    .frame(width: 150)
-                    .font(Font.system(size: 15))
-                    .background(Color(hex: "F5F5F5"))
-                    .cornerRadius(16)
-                    .shadow(color: .gray, radius: 2, x: 2, y: 3)
-                Toggle("",isOn: $needDimention)
-                    .padding()
-                    .font(Font.system(size: 15))
-                    .background(Color(hex: "F5F5F5"))
-                    .cornerRadius(16)
-                    .shadow(color: .gray, radius: 2, x: 2, y: 3)
-                
+                Section {
+                    Text("Dimention: ")
+                        .padding()
+                        .frame(width: 100)
+                        .font(Font.system(size: 13))
+                        .background(Color(hex: "F5F5F5"))
+                        .cornerRadius(16)
+                        .shadow(color: .gray, radius: 2, x: 2, y: 3)
+                    Toggle("",isOn: $needDimention)
+                        //.padding()
+                        .font(Font.system(size: 13))
+                        .background(Color(hex: "F5F5F5"))
+                        .cornerRadius(16)
+                        .shadow(color: .gray, radius: 2, x: 2, y: 3)
+                }
             }.padding()
             
             /*
@@ -500,8 +501,8 @@ struct EachCategoryView: View {
                     Text("Add")
                     
                 }).buttonStyle(BlueButton())
-            }
-            
+            }.padding()
+            //*/
         }.padding()
         
     }

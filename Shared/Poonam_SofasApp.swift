@@ -11,7 +11,6 @@ import SwiftUI
 struct Poonam_SofasApp: App {
     var body: some Scene {
         WindowGroup {
-            //ContentView()
             StartApp()
         }
     }
