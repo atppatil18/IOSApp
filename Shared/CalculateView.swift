@@ -126,13 +126,13 @@ struct CalculateView: View {
         var total: Double = 0
         for eachItem in itemCounts{
             
-            let myInt2 = Double(eachItem.count ?? 1) ?? 0
+            let myInt2 = Double(eachItem.cover ?? "1") ?? 0
             let rowPrice = eachItem.price * myInt2
             let countString = eachItem.count ?? 0
             textToWrite += "\n"
             textToWrite += eachItem.name //+ ", "+String(myInt2)
             textToWrite += ", "
-            textToWrite += String(countString)
+            textToWrite += eachItem.cover//String(countString)
             textToWrite += ", "
             textToWrite += String(rowPrice)
             
