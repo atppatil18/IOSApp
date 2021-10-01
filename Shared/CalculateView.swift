@@ -122,7 +122,7 @@ struct CalculateView: View {
     }
     
     func WriteCSV(itemCounts: [Item]) -> String{
-        var textToWrite: String = "Item, Count, Price"
+        var textToWrite: String = "Category, Item, Count, Per Unit,Price"
         var total: Double = 0
         for eachItem in itemCounts{
             
@@ -130,9 +130,13 @@ struct CalculateView: View {
             let rowPrice = eachItem.price * myInt2
             let countString = eachItem.count ?? 0
             textToWrite += "\n"
+            textToWrite += eachItem.category //+ ", "+String(myInt2)
+            textToWrite += ", "
             textToWrite += eachItem.name //+ ", "+String(myInt2)
             textToWrite += ", "
             textToWrite += eachItem.cover//String(countString)
+            textToWrite += ", "
+            textToWrite += String(eachItem.price) //+ ", "+String(myInt2)
             textToWrite += ", "
             textToWrite += String(rowPrice)
             

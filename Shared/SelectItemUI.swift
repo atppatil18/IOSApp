@@ -18,7 +18,8 @@ struct SelectItemUI: View {
     @State var addItemMenu:Bool = false
     @State var addCategoryMenu: Bool = false
     @State var updateItemMenu: Bool = false
-    
+    //Selected Items array
+    @State var selectedItem: [String] = []
     
     
     @State var update_name: String = ""
@@ -35,7 +36,7 @@ struct SelectItemUI: View {
                 .edgesIgnoringSafeArea(.all)
             if self.selectMenu{
                 //SelectView(
-                SelectView(selectMenu: $selectMenu,selectedItemsRow: $selectedItemsRow, SelectedArray: $SelectedArray, confirmMenu: $confirmMenu)
+                SelectView(selectMenu: $selectMenu,selectedItemsRow: $selectedItemsRow, SelectedArray: $SelectedArray, confirmMenu: $confirmMenu, selectedItem: $selectedItem)
             }else if self.confirmMenu{
                 ConfirmView(selectMenu: $selectMenu ,confirmMenu: $confirmMenu, SelectedArray: $SelectedArray, authMenu: $authMenu)
             }else if self.authMenu{
@@ -71,7 +72,8 @@ struct SelectView: View {
     @Binding var SelectedArray: [Item]
     @Binding var confirmMenu: Bool
     var viewHandler = ModelViewHandler()
-    @State var selectedItem: [String] = []
+    //@State var selectedItem: [String] = []
+    @Binding var selectedItem: [String]// = []
     var allItemList:[Item] = ModelViewHandler().getAllItems()
     @State var searchText = ""
     @State var sel = false
@@ -118,6 +120,7 @@ struct SelectView: View {
                                         self.selectedItem.remove(at: index)
                                         
                                     }else{
+                                        
                                         self.selectedItem.append(eachitem.name)
                                         self.selectedItemsRow.insert(eachitem)
                                         //selectedItems(pick: eachitem, isTick: false)
@@ -159,12 +162,22 @@ struct SelectView: View {
     
     func itemsInitialize(itemRows: Set<Item>) -> [Item] {
         var tempArr = [Item]()
+        
         for eachItem in itemRows{
-            
-            let temp =  Item(id: eachItem.id, name: eachItem.name, cover: "1", price: eachItem.price, category: eachItem.category, unit: eachItem.unit, selected: eachItem.selected, count: 1)
+            var coverCount = "1"
+            for eachValueItem in self.SelectedArray{
+                if eachValueItem.name == eachItem.name{
+                    coverCount = eachValueItem.cover
+                }
+                
+            }
+            let temp =  Item(id: eachItem.id, name: eachItem.name, cover: coverCount, price: eachItem.price, category: eachItem.category, unit: eachItem.unit, selected: eachItem.selected, count: 1)
             
             tempArr.append(temp)
         }
+        
+        //images.sorted(by: { $0.fileID > $1.fileID })
+        tempArr = tempArr.sorted(by: { $0.category > $1.category})
         return tempArr
     }
 }
@@ -217,11 +230,8 @@ struct ConfirmView: View {
                 
                 SearchBar(text: $searchTextData)
                                 
-               
-                
                 List(SelectedArray.indices , id: \.self){index in
-                    
-                    
+                                    
                     HStack{
                         Text(SelectedArray[index].name)
                             .font(.title3)
